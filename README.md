@@ -3,6 +3,8 @@
 This is a simple example app (including has_secure_password auth) to demonstrate
 some of the usage of the `nav_panel` gem.
 
+[Get the nav_panel gem](http://github.com/robmclarty/nav_panel)
+
 NOTE: This app doesn't include any tests. This is just to show some example
 usage of the gem inside a working app.
 

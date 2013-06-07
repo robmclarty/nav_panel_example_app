@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<%- if alert %>
+  <p id="warning"><%= alert %></p>
+<%- end %>
+
+<%= form_tag sessions_path, :class => 'user-form' do %>
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email], :id => "login-email", :autofocus => "autofocus", :autocorrect => "off", :autocapitalize => "off", :spellcheck => "false" %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password, nil, :id => "login-password" %>
+  </div>
+  <div class="actions">
+    <%= submit_tag 'Login', :class => 'button plain' %>
+  </div>
+<% end %>
